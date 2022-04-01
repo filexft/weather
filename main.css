@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    background-color: black;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+.app-wrap
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header .search-box
+{
+    max-width: 280px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: rgba(88, 173, 146, 0.3);
+    border-bottom: 0.3rem solid rgb(129, 129, 117);
+    border-left: 0.2rem solid rgb(129, 129, 117);
+    border-radius: 10px 0px 10px 10px;
+
+    transition: 0.3s ease-in-out;
+}
+header .search-box:focus
+{
+    background-color: rgba(127, 255, 212, 0.9);
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px 25px;
+}
+.city
+{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.date
+{
+    font-size: 24px;
+    font-weight: 300;
+}
+.temp
+{
+    font-size: 102px;
+    font-weight: 800;
+    margin: 20px 15px;
+    text-shadow: 1px 5px rgba(218, 132, 132, 0.5);
+}
+.temp span
+{
+    font-weight: 400;
+} 
+.weather
+{
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.icon
+{
+    width: 6rem;
+    height: 6rem;
+    border: none;
+}
+.min-max
+{
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 0px 2px rgba(218, 132, 132, 0.5);
+}
